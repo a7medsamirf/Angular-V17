@@ -3,8 +3,9 @@ import { RouterOutlet } from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 import { ButtonModule } from 'primeng/button';
 import { TodoComponent } from './Components/todo/todo.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { PostComponent } from './Components/post/post.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { HeaderComponent } from './header/header.component';
     RouterOutlet,
     MatButtonModule,
     ButtonModule,
-    TodoComponent
+    TodoComponent,
+    PostComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
